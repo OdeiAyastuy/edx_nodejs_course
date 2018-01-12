@@ -20,7 +20,7 @@ const csv_to_json_v1 = (name='customer-data.csv') => {
                 }
                 f_data.push(client_obj)
             }
-            var json_data = JSON.stringify(f_data)
+            var json_data = JSON.stringify(f_data, null, 2)
             callback(json_data)
         })
     }
